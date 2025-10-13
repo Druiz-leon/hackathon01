@@ -161,3 +161,18 @@ footer a:hover {
     font-size: 2rem;
   }
 }
+
+/* Para carrusel*/
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-inner .card {
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
