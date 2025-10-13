@@ -1,0 +1,113 @@
+:root {
+  --azul-oscuro: #024173;
+  --azul-medio: #0675BF;
+  --azul-claro: #63A4DB;
+  --verde: #56856A;
+  --blanco: #FCFCFC;
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo', sans-serif;
+  background-color: var(--blanco);
+  color: var(--azul-oscuro);
+  line-height: 1.6;
+}
+
+/* NAVBAR PERSONALIZADA */
+.custom-navbar {
+  background: linear-gradient(90deg, rgba(99,164,219,0.9), rgba(6,117,191,0.85), rgba(2,65,115,0.8));
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--blanco);
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: var(--azul-claro);
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.3));
+}
+
+.brand-text {
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: var(--blanco);
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--azul-claro);
+}
+
+/* CARRITO */
+.cart {
+  position: relative;
+  font-size: 1.3rem;
+  color: var(--blanco);
+}
+
+.cart-count {
+  background: var(--verde);
+  color: var(--blanco);
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transition: all 0.3s ease;
+}
+
+/* HERO */
+.hero {
+  background: url('./imagenes/escalada.jpg') center/cover no-repeat;
+  color: var(--blanco);
+  text-align: center;
+  padding: 8rem 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* FOOTER personalizado */
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--verde);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
