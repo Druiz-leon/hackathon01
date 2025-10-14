@@ -78,7 +78,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* HERO */
  /* HERO */
     .hero {
       position: relative;
@@ -175,4 +174,51 @@ footer a:hover {
 
 .card-body {
     padding: 1.25rem;
+}
+
+/* Contenedor para las alertas (fijo en la parte superior derecha) */
+#alert-container {
+    position: fixed;
+    top: 80px; /* Un poco más abajo de tu navbar */
+    right: 20px;
+    z-index: 1050; /* Por encima de otros elementos */
+    width: 300px;
+}
+
+/* Estilos para el carrito y el contador */
+.cart-container {
+    position: relative; /* Contenedor relativo para posicionar el contador */
+    font-size: 24px;
+}
+
+.cart-counter {
+    position: absolute; /* Posición absoluta respecto al contenedor */
+    top: -10px;        /* Lo subimos un poco */
+    right: -10px;       /* Lo movemos a la derecha */
+    background-color: red;
+    color: white;
+    border-radius: 50%; /* Para que sea un círculo */
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+} 
+/* --- ESTILOS PERSONALIZADOS PARA EL FORMULARIO DE PERFIL --- */
+
+/* Color de fondo para el encabezado de la tarjeta de perfil */
+#profile-card-header {
+    background-color: #63A4DB; /* Tu color azul claro */
+}
+
+/* Estilos para el botón de guardar cambios */
+#save-changes-btn {
+    background-color: #56856A; /* Tu color verde */
+    color: #FCFCFC; /* Color de texto blanco para que contraste */
+    border: none; /* Opcional: quita el borde que Bootstrap a veces añade */
+    font-weight: 600; /* Opcional: hace el texto un poco más grueso */
+    transition: background-color 0.3s ease; /* Opcional: añade una transición suave */
+}
+
+/* Efecto hover para el botón (cambia de color al pasar el cursor) */
+#save-changes-btn:hover {
+    background-color: #456b55; /* Un verde un poco más oscuro para el efecto */
 }
